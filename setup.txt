@@ -1,0 +1,21 @@
+git clone git@github.com:nguyenhuydat98/ecommerce.git
+
+cp -a .env.example .env
+
+composer install
+
+composer dump-autoload
+
+php artisan key:generate
+
+npm install
+
+php artisan storage:link
+
+bower install
+
+-------------------------------------------------
+
+php artisan migrate
+
+php artisan db:seed
